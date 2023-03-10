@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700&display=swap');
 
 :root {
     font-size: 16px;
@@ -96,6 +96,8 @@ ul {
         max-width: 640px;
     }
 }
+
+/* ------------------------ Index Page ----------------------------- */
 
 /* Start Header */
 header {
@@ -925,3 +927,130 @@ header.about .hero-about h1 {
     text-transform: uppercase;
 }
 /* End Map Section */
+
+/* ------------------------ Founder Page ----------------------------- */
+/* Start Header */
+header.founder {
+    background: linear-gradient(
+            0deg,
+            rgba(7, 17, 66, 0.5),
+            rgba(7, 17, 66, 0.5)
+        ),
+        url('../images/founder-page-header-bg.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    min-height: 50vh;
+}
+
+header.founder .hero-founder {
+    height: 350px;
+    display: grid;
+    place-content: center;
+}
+
+header.founder .hero-founder h1 {
+    font-weight: bold;
+    font-size: 4rem;
+    text-transform: uppercase;
+    color: white;
+}
+/* End Header */
+
+/* Start CEO Section */
+.ceo {
+}
+
+.ceo .container {
+    padding: 5rem 0;
+    display: flex;
+}
+
+.ceo .container .ceo-content h2 {
+    font-size: 2.5rem;
+    font-weight: bold;
+    text-transform: uppercase;
+    color: var(--secondary-color);
+    margin-bottom: 2rem;
+}
+
+.ceo .container .ceo-content p {
+    max-width: 80%;
+    color: var(--primary-color);
+    margin-bottom: 1.3rem;
+    font-size: 1.2rem;
+    line-height: 1.4;
+}
+
+.ceo .container .ceo-content p b {
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+.ceo .container .ceo-content p.ceo-name {
+    font-weight: bold;
+}
+
+.ceo .container .ceo-content p.ceo-role {
+    font-weight: bold;
+}
+
+.ceo .container .ceo-image {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 3rem;
+}
+
+.ceo .container .ceo-image img:first-child {
+    width: 35rem;
+}
+/* End CEO Section */
+
+/* Start CEO In Few Words Section */
+.ceo-in-words {
+    background-color: #f9f9f9;
+}
+/* End CEO In Few Words Section */
+
+/* ------------------------ Services Page ----------------------------- */
+/* Start Header */
+header.services {
+    background: linear-gradient(
+            0deg,
+            rgba(7, 17, 66, 0.5),
+            rgba(7, 17, 66, 0.5)
+        ),
+        url('../images/services-page-header-bg.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    min-height: 50vh;
+}
+
+header.services .hero-services {
+    height: 350px;
+    display: grid;
+    place-content: center;
+}
+
+header.services .hero-services h1 {
+    font-weight: bold;
+    font-size: 4rem;
+    text-transform: uppercase;
+    color: white;
+}
+/* End Header */
+
+/* Start Services Info Section */
+.services-info .container {
+    padding: 5rem 0;
+}
+
+.services-info .container p {
+    max-width: 55rem;
+    line-height: 1.5;
+    font-size: 1.3rem;
+    color: var(--primary-color);
+}
+/* End Services Info Section */
