@@ -15,7 +15,7 @@
     </head>
     <body>
         <!-- Start Header -->
-        <header class="founder">
+        <header class="quote">
             <div class="menu">
                 <ul>
                     <li><a href="./index.html">Home</a></li>
@@ -50,104 +50,111 @@
                     </div>
                 </nav>
 
-                <section class="hero-founder">
-                    <h1>founder</h1>
+                <section class="hero-quote">
+                    <h1>online quote</h1>
                 </section>
             </div>
         </header>
         <!-- End Header -->
 
-        <!-- Start CEO Section -->
-        <section class="ceo">
+        <!-- Start Quote Form Section -->
+        <div class="quote-form">
             <div class="container">
-                <div class="ceo-content">
-                    <h2>our seo in few words</h2>
-                    <p>
-                        Nowadays, the world is facing major security
-                        constraints, which explains the increased demand for
-                        security services. However, competition in our security
-                        sector is increasing aggressively, suffering from a lack
-                        of legislative visibility in <b>Morocco</b>.
-                    </p>
-                    <p>
-                        To deal with this, a security company has no choice but
-                        to rely on human capital and innovation as fundamental
-                        pillars to develop its performance in order to achieve
-                        the ultimate objective of competitiveness.
-                    </p>
-                    <p>
-                        It is only by reaching these values that we will be able
-                        to seize the opportunities offered and evolve in a
-                        stable and sustainable way.From all the above, I am
-                        certain that being good is absolutely not enough, you
-                        have to be excellent. Achieving this excellency passes
-                        through differentiation and originality.
-                    </p>
-                    <p>
-                        Our company <b>AGOS</b> strives for this excellence by
-                        aiming for an oriented vision towards an innovative
-                        security set of skills, a tailor-made approach, and
-                        trustworthy relationships with our partners.
-                    </p>
-                    <p>
-                        With this in mind, we are pleased to provide you with
-                        this space dedicated to presenting our services, our
-                        values , and our vision intended to provide you with
-                        coveted excellence.
-                    </p>
-                    <p>
-                        This platform is now a channel that links us with our
-                        partners and lively place for exchange.Thus, we strive
-                        to know your specificities, your concerns, and your
-                        environment as well as possible to weave with you links
-                        of transparency and sincerity.With our operational
-                        know-how, our methodology, and our internal
-                        organization, we provide you with a complete package
-                        that perfectly meets your highest requirements and
-                        expectations. Our company <b>AGOS</b> has significant
-                        human capital that we put at the heart of our concern
-                        and that we systematically monitor its development
-                        through continuous training.
-                    </p>
-                    <p>
-                        To conclude; protecting, securing and monitoring has
-                        never been easier, on the contrary, it is a complex and
-                        decisive task. Our managerial and operational team
-                        assists and accompanies you to provide you with the best
-                        security service for you and for your most precious
-                        assets.
-                    </p>
-                    <p class="ceo-name">ADNANE AJOUAMI</p>
-                    <p class="ceo-role">
-                        CEO – AJOUAMI GROUP OF SECURITAS – AGOS
-                    </p>
-                </div>
+                <form>
+                    <div class="group-input">
+                        <label for="first-name">First Name*</label>
+                        <input type="text" name="first-name" id="first-name" />
+                    </div>
 
-                <div class="ceo-image">
-                    <img src="./images/ceo-picture.png" alt="ceo picture" />
-                    <img
-                        src="./images/adnane-ajouami-signiture.svg"
-                        alt="ceo signature"
-                    />
-                </div>
-            </div>
-        </section>
-        <!-- End CEO Section -->
+                    <div class="group-input">
+                        <label for="last-name">Last Name*</label>
+                        <input type="text" name="last-name" id="last-name" />
+                    </div>
 
-        <!-- Start cEO In Few Words Section -->
-        <section class="ceo-in-words">
-            <div class="container">
-                <div class="caption">
-                    <h2>Our vision</h2>
-                    <p>
-                        <b>AGOS</b> provides complete turnkey security solutions
-                        with highly trained and qualified security officers for
-                        optimal operation.
-                    </p>
-                </div>
+                    <div class="group-input">
+                        <label for="email">E-mail Address*</label>
+                        <input type="email" name="email" id="email" />
+                    </div>
+
+                    <div class="group-input">
+                        <label for="phone">Phone Number*</label>
+                        <input type="tel" name="phone" id="phone" />
+                    </div>
+
+                    <div class="group-input">
+                        <label for="from">From*</label>
+                        <input type="date" name="from" id="from" />
+                    </div>
+
+                    <div class="group-input">
+                        <label for="to">To*</label>
+                        <input type="date" name="to" id="to" />
+                    </div>
+
+                    <div class="group-input protection-type">
+                        <label for="protection-type">
+                            What Kind of protection do you need?
+                        </label>
+                        <select name="protection-type" id="protection-type">
+                            <option value="1">1</option>
+                            <option value="2">2</option>
+                            <option value="3">3</option>
+                            <option value="4">4</option>
+                        </select>
+                    </div>
+
+                    <div class="group-input number-of-guards">
+                        <label for="number-of-guards">
+                            How many guards do you need?
+                        </label>
+                        <select name="number-of-guards" id="number-of-guards">
+                            <option value="1">1</option>
+                            <option value="2">2</option>
+                            <option value="3">3</option>
+                            <option value="4">4</option>
+                        </select>
+                    </div>
+
+                    <div class="group-input how-did-you-find-us">
+                        <label for="how-did-you-find-us">
+                            How did your hear about us?
+                        </label>
+                        <select
+                            name="how-did-you-find-us"
+                            id="how-did-you-find-us"
+                        >
+                            <option value="1">LinkedIn</option>
+                            <option value="2">Facebook</option>
+                            <option value="3">Google</option>
+                            <option value="4">Instagram</option>
+                        </select>
+                    </div>
+
+                    <div class="group-input message-input">
+                        <label for="details">details...</label>
+                        <textarea
+                            name="details"
+                            id="details"
+                            cols="30"
+                            rows="15"
+                        ></textarea>
+                    </div>
+
+                    <div class="group-input quote-files">
+                        <input
+                            type="file"
+                            name="quote-files"
+                            id="quote-files"
+                        />
+                    </div>
+
+                    <button type="submit" class="btn btn-secondary">
+                        send request
+                    </button>
+                </form>
             </div>
-        </section>
-        <!-- End CEO In Few Words Section -->
+        </div>
+        <!-- End Quote Form Section -->
 
         <!-- Start Footer -->
         <footer>

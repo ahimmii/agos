@@ -1054,3 +1054,472 @@ header.services .hero-services h1 {
     color: var(--primary-color);
 }
 /* End Services Info Section */
+
+/* ------------------------ Services-1 Page ----------------------------- */
+/* Start Header */
+header.services-1 {
+    background: linear-gradient(
+            0deg,
+            rgba(7, 17, 66, 0.5),
+            rgba(7, 17, 66, 0.5)
+        ),
+        url('../images/services-1-header-bg.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    min-height: 50vh;
+}
+
+header.services-1 .hero-services-1 {
+    height: 350px;
+    display: grid;
+    place-content: center;
+}
+
+header.services-1 .hero-services-1 h1 {
+    font-weight: bold;
+    font-size: 4rem;
+    text-transform: uppercase;
+    color: white;
+    text-align: center;
+}
+/* End Header */
+
+/* Start Services-1 Info Section */
+.services-1-info .container {
+    padding: 5rem 0;
+}
+
+.services-1-info .container p {
+    max-width: 70rem;
+    line-height: 1.3;
+    font-size: 1.3rem;
+    color: var(--primary-color);
+    margin-bottom: 1.5rem;
+}
+/* End Services-1 Info Section */
+
+/* Start Why AGOS Section */
+.why-agos {
+    background-color: #f9f9f9;
+    color: var(--primary-color);
+}
+
+.why-agos .container .why {
+    padding-bottom: 5rem;
+    display: flex;
+    gap: 1rem;
+    justify-content: space-between;
+}
+
+.why-agos .container .why .card {
+    width: 23%;
+    background: white;
+    padding: 3rem 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: 1rem;
+}
+
+.why-agos .container .why .card img {
+    width: 64px;
+    height: 100px;
+}
+
+.why-agos .container .why .card h4 {
+    text-transform: uppercase;
+}
+/* End Why AGOS Section */
+
+/* Start Explore Morocco Section */
+.explore-morocco {
+    background: var(--primary-color);
+    color: white;
+}
+
+.explore-morocco .container {
+    padding: 4rem 0;
+}
+
+.explore-morocco .container h2 {
+    font-size: 2.5rem;
+    font-weight: bold;
+    text-transform: uppercase;
+    color: var(--secondary-color);
+    margin-bottom: 2rem;
+}
+
+.explore-morocco .container p {
+    font-size: 1.3rem;
+    max-width: 70rem;
+    line-height: 1.3;
+}
+/* End Explore Morocco Section */
+
+/* Start Explore Morocco Form */
+.explore-morocco-form .container {
+    padding: 3rem 0 5rem 0;
+}
+.explore-morocco-form .container h2 {
+    font-size: 2.5rem;
+    font-weight: bold;
+    text-transform: uppercase;
+    color: var(--secondary-color);
+    margin-bottom: 2rem;
+    text-align: center;
+}
+
+.container form {
+    position: relative;
+    border-top: 15px solid var(--primary-color);
+    padding: 2rem 0;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(45%, 1fr));
+    gap: 2rem;
+    background-color: #fdfdfd;
+}
+
+.explore-morocco-form .container form::before {
+    content: '';
+    width: 20px;
+    height: 20px;
+    background-color: var(--primary-color);
+    position: absolute;
+    top: -10px;
+    left: 60px;
+    transform: rotate(45deg);
+}
+
+.container form .group-input {
+    display: flex;
+    flex-direction: column;
+    padding: 0 2rem;
+}
+
+.container form .group-input label {
+    margin-bottom: 5px;
+    font-weight: 500;
+    text-transform: capitalize;
+}
+
+.container form .group-input input,
+.container form .group-input select,
+.container form .group-input textarea {
+    padding: 0.6rem 1.1rem;
+    border: 1px solid #dfdfdf;
+    color: var(--primary-color);
+    background-color: white;
+}
+
+.container form .group-input input::placeholder {
+    color: #dfdfdf;
+}
+
+.container form .group-input select option {
+    padding: 1rem;
+}
+
+.container form .group-input textarea {
+    resize: none;
+}
+
+.container form .car-type,
+.container form .cars,
+.container form .message-input,
+.container form .protection-type,
+.container form .number-of-guards,
+.container form .how-did-you-find-us,
+.container form .quote-files {
+    grid-column: 1/3;
+}
+
+.explore-morocco-form .container form .cars {
+    display: flex;
+    flex-direction: row;
+    gap: 1rem;
+    flex-wrap: wrap;
+}
+
+.explore-morocco-form .container form .cars label img {
+    width: 150px;
+}
+
+.container form .btn {
+    margin-left: 2rem;
+}
+
+/* HIDE RADIO */
+[type='radio'] {
+    position: absolute;
+    opacity: 0;
+    width: 0;
+    height: 0;
+}
+
+/* IMAGE STYLES */
+[type='radio'] + img {
+    cursor: pointer;
+}
+
+/* CHECKED STYLES */
+[type='radio']:checked + img {
+    outline: 2px solid var(--primary-color);
+}
+/* End Explore Morocco Form */
+
+/* ------------------------ Recruitment Page ----------------------------- */
+/* Start Header */
+header.recruitment {
+    background: linear-gradient(
+            0deg,
+            rgba(7, 17, 66, 0.5),
+            rgba(7, 17, 66, 0.5)
+        ),
+        url('../images/recruitment-header-bg.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    min-height: 50vh;
+}
+
+header.recruitment .hero-recruitment {
+    height: 350px;
+    display: grid;
+    place-content: center;
+}
+
+header.recruitment .hero-recruitment h1 {
+    font-weight: bold;
+    font-size: 4rem;
+    text-transform: uppercase;
+    color: white;
+    text-align: center;
+}
+/* End Header */
+
+/* Start Recruitment Form Section */
+.recruitment-form .container .caption h2 {
+    color: var(--primary-color);
+}
+
+.recruitment-form .container .caption p {
+    color: var(--primary-color);
+    max-width: 60rem;
+}
+
+.recruitment-form .container form {
+    border-top: none;
+    border-bottom: 5px solid var(--primary-color);
+    padding: 6rem 0 8rem 0;
+    margin-bottom: 6rem;
+}
+/* End Recruitment Form Section */
+
+/* ------------------------ Contact Us Page ----------------------------- */
+/* Start Header */
+header.contact-us {
+    background: linear-gradient(
+            0deg,
+            rgba(7, 17, 66, 0.5),
+            rgba(7, 17, 66, 0.5)
+        ),
+        url('../images/contact-us-header-bg.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    min-height: 50vh;
+}
+
+header.contact-us .hero-contact-us {
+    height: 350px;
+    display: grid;
+    place-content: center;
+}
+
+header.contact-us .hero-contact-us h1 {
+    font-weight: bold;
+    font-size: 4rem;
+    text-transform: uppercase;
+    color: white;
+    text-align: center;
+}
+/* End Header */
+
+/* Start Contact-Us Form Section */
+.contact-us-form .container .caption p {
+    color: var(--primary-color);
+    max-width: 60rem;
+}
+
+.contact-us-form .container form {
+    border-top: none;
+    border-bottom: 5px solid var(--primary-color);
+    padding: 6rem 0 8rem 0;
+    margin-bottom: 6rem;
+}
+/* End Contact-Us Form Section */
+
+/* Start Contact Details Section */
+.contact-details {
+    background-color: var(--secondary-color);
+    color: var(--primary-color);
+}
+
+.contact-details .container {
+    padding: 4rem 0;
+    display: flex;
+    justify-content: space-between;
+}
+
+.contact-details .container > div {
+    display: flex;
+    gap: 1rem;
+    align-items: center;
+}
+
+.contact-details .container > div > div h4 {
+    font-weight: bold;
+    font-size: 1.3rem;
+    text-transform: capitalize;
+    margin-bottom: 0.4rem;
+}
+/* End Contact Details Section */
+
+/* ------------------------ Quote Page ----------------------------- */
+/* Start Header */
+header.quote {
+    background: linear-gradient(
+            0deg,
+            rgba(7, 17, 66, 0.5),
+            rgba(7, 17, 66, 0.5)
+        ),
+        url('../images/contact-us-header-bg.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    min-height: 50vh;
+}
+
+header.quote .hero-quote {
+    height: 350px;
+    display: grid;
+    place-content: center;
+}
+
+header.quote .hero-quote h1 {
+    font-weight: bold;
+    font-size: 4rem;
+    text-transform: uppercase;
+    color: white;
+    text-align: center;
+}
+/* End Header */
+
+/* Start Quote Form Section */
+.quote-form .container {
+    padding: 4rem 0;
+}
+
+.quote-form .container form {
+    border-top: none;
+    border-bottom: 5px solid var(--primary-color);
+    padding: 6rem 0 8rem 0;
+    margin-bottom: 6rem;
+}
+
+.quote-form .container form .quote-files {
+    text-align: center;
+}
+/* End Quote Form Section */
+
+/* ------------------------ Blogs Page ----------------------------- */
+/* Start Header */
+header.blog {
+    background: linear-gradient(
+            0deg,
+            rgba(7, 17, 66, 0.5),
+            rgba(7, 17, 66, 0.5)
+        ),
+        url('../images/blog-header-bg.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    min-height: 50vh;
+}
+
+header.blog .hero-blog {
+    height: 350px;
+    display: grid;
+    place-content: center;
+}
+
+header.blog .hero-blog h1 {
+    font-weight: bold;
+    font-size: 4rem;
+    text-transform: uppercase;
+    color: white;
+    text-align: center;
+}
+/* End Header */
+
+/* Start Blogs Section */
+.blogs .container {
+    padding: 5rem 0;
+    display: flex;
+    justify-content: space-between;
+    gap: 4rem;
+}
+
+.blogs .container .blog-card {
+    border-top: 10px solid var(--secondary-color);
+    display: flex;
+    flex-direction: column;
+}
+
+.blogs .container .blog-card img {
+    aspect-ratio: 2/1;
+    object-fit: cover;
+    width: 100%;
+}
+
+.blogs .container .blog-card .blog-card-content {
+    background: var(--primary-color);
+    padding: 1rem 2rem;
+    color: white;
+}
+
+.blogs .container .blog-card .blog-card-content .date {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 1rem;
+    text-transform: uppercase;
+    font-weight: 500;
+}
+
+.blogs .container .blog-card .blog-card-content .date span {
+    color: var(--secondary-color);
+    font-weight: bold;
+    font-size: 1.6rem;
+}
+
+.blogs .container .blog-card .blog-card-content .blog-text {
+    color: rgba(255, 255, 255, 0.8);
+}
+/* End Blogs Section */
+
+/* ------------------------ Specific Blog Page ----------------------------- */
+/* Start Blog Content Section */
+.blog-content .container {
+    padding: 5rem 0 0 0;
+}
+
+.blog-content .container p {
+    max-width: 75rem;
+    margin-bottom: 2rem;
+    font-size: 1.1rem;
+    line-height: 1.4;
+    color: var(--primary-color);
+}
+/* End Blog Content Section */
