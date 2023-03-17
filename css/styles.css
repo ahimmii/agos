@@ -254,12 +254,6 @@ nav .burger-menu.open .close {
     }
 }
 
-@media only screen and (max-width: 768px) {
-}
-
-@media only screen and (max-width: 640px) {
-}
-
 /* End Header */
 
 /* Start Agency Section */
@@ -379,12 +373,13 @@ nav .burger-menu.open .close {
     }
 }
 
-@media only screen and (max-width: 640px) {
-}
-
 /* End Agency Section */
 
 /* Start Our Services Section */
+.services {
+    position: relative;
+}
+
 .caption {
     display: flex;
     flex-direction: column;
@@ -445,108 +440,128 @@ nav .burger-menu.open .close {
 }
 
 .accordion {
-    background: var(--primary-color);
-    display: flex;
-    padding: 4rem 0;
-    overflow: hidden;
-}
-
-.accordion .accordion-item {
-    border-bottom: 1px solid var(--secondary-color);
-}
-
-.accordion .accordion-item button[aria-expanded='true'] {
-    border-bottom: 1px solid var(--secondary-color);
-}
-
-.accordion .accordion-item button {
     position: relative;
-    display: block;
-    text-align: left;
+    background: linear-gradient(
+            0deg,
+            rgba(7, 17, 66, 0.6),
+            rgba(7, 17, 66, 0.6)
+        ),
+        url('../images/services.png');
+}
+
+.accordion .slides {
     width: 100%;
-    padding: 1em 0;
-    color: white;
-    font-size: 1.15rem;
-    font-weight: 400;
-    border: none;
-    background: none;
-    outline: none;
-    transform: rotate(-90deg);
-    border: 1px solid red;
-}
-.accordion .accordion-item button:hover,
-.accordion .accordion-item button:focus {
-    cursor: pointer;
-    color: white;
-}
-.accordion .accordion-item button::after {
-    cursor: pointer;
-    color: white;
-    border: 1px solid white;
-}
-
-.accordion .accordion-item .accordion-title {
-    padding: 1em 1.5em 1em 0;
-}
-.accordion .accordion-item .icon {
-    display: inline-block;
-    position: absolute;
-    top: 18px;
-    right: 0;
-    width: 22px;
-    height: 22px;
-    border: 1px solid;
-    border-radius: 22px;
-}
-.accordion .accordion-item .accordion-title::before {
-    display: block;
-    position: absolute;
-    content: '';
-    top: 9px;
-    left: 5px;
-    width: 10px;
-    height: 2px;
-    background: currentColor;
-}
-
-.accordion .accordion-item .accordion-title::after {
-    display: block;
-    position: absolute;
-    content: '';
-    top: 5px;
-    left: 9px;
-    width: 2px;
-    height: 10px;
-    background: currentColor;
-}
-.accordion .accordion-item button[aria-expanded='true'] .accordion-title {
-    color: white;
-}
-.accordion .accordion-item button[aria-expanded='true'] .icon::after {
-    width: 0;
-}
-
-.accordion .accordion-item button[aria-expanded='true'] + .accordion-content {
-    opacity: 1;
-    width: auto;
-    max-height: 18em;
-    transition: all 200ms linear;
-    will-change: opacity, max-height;
-}
-
-.accordion .accordion-item .accordion-content {
-    opacity: 0;
-    max-height: 0;
-    width: 0;
+    display: flex;
     overflow: hidden;
-    transition: opacity 200ms linear, max-height 200ms linear;
-    will-change: opacity, max-height;
 }
-.accordion .accordion-item .accordion-content p {
-    font-size: 1rem;
-    font-weight: 300;
-    margin: 2em 0;
+.accordion .slide {
+    list-style-type: none;
+    height: 500px;
+    width: 4%;
+    overflow: hidden;
+    /* border: 1px solid red; */
+
+    -webkit-transition: all 500ms linear;
+    -moz-transition: all 500ms linear;
+    -o-transition: all 500ms linear;
+    -ms-transition: all 500ms linear;
+    transition: all 500ms linear;
+}
+
+.accordion .slide div.action {
+    display: block;
+    width: 101%;
+    height: 100%;
+    display: flex;
+    gap: 1rem;
     color: white;
+    padding: 1rem 1rem;
+    align-items: center;
+    transform: rotate(-180deg);
+    position: relative;
+    cursor: pointer;
+    border-left: 2px solid var(--secondary-color);
+    border-right: 2px solid var(--secondary-color);
+    writing-mode: vertical-lr;
+    text-transform: uppercase;
+}
+
+.accordion .slide div.action .number {
+    color: var(--secondary-color);
+    font-weight: bold;
+    font-size: 1.5rem;
+    transform: rotate(90deg);
+}
+
+.accordion .slide-content {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    width: 720px;
+    padding: 40px;
+}
+.accordion .slide-content {
+    color: #fff;
+}
+
+.accordion .slide-content h2 {
+    font-size: 1.7rem;
+    text-transform: uppercase;
+    display: flex;
+    flex-direction: column;
+    font-weight: 500;
+    color: var(--secondary-color);
+    position: relative;
+}
+
+.accordion .slide-content h2::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -10px;
+    width: 4px;
+    height: 100%;
+    background: var(--secondary-color);
+}
+
+.accordion .slide-content h2 span {
+    font-size: 3rem;
+    font-weight: bold;
+}
+
+.accordion .slide-content p {
+    max-width: 70rem;
+    line-height: 1.4;
+}
+
+.accordion .active {
+    width: 100%;
+}
+.accordion .active div.action {
+    display: none;
+}
+
+@media only screen and (max-width: 768px) {
+    .accordion {
+        background-image: none;
+        background-color: var(--primary-color);
+    }
+
+    .slides {
+        display: initial;
+        flex-direction: column;
+    }
+    .slide {
+        width: 100% !important;
+        margin-bottom: 15px;
+        height: auto;
+        /* border-radius: 10px; */
+    }
+    .slide-content {
+        width: 100% !important;
+        padding: 25px;
+        font-size: 95%;
+    }
 }
 /* End Our Services Section */
 
