@@ -344,7 +344,7 @@ nav .burger-menu.open .close {
     }
 
     .agency .text {
-        padding: 3rem 0;
+        padding: 3rem 1rem;
     }
 
     .agency hr {
@@ -353,6 +353,7 @@ nav .burger-menu.open .close {
 
     .agency .image > p {
         bottom: 50px;
+        font-size: 2rem;
     }
 }
 
@@ -365,11 +366,19 @@ nav .burger-menu.open .close {
         text-align: center;
         align-items: center;
     }
+
+    .agency .image > p {
+        font-size: 1.7rem;
+    }
 }
 
 @media only screen and (max-width: 768px) {
     .agency .image {
-        width: 25rem;
+        width: 20rem;
+    }
+
+    .agency .image > p {
+        font-size: 1.5rem;
     }
 }
 
@@ -557,10 +566,21 @@ nav .burger-menu.open .close {
         height: auto;
         /* border-radius: 10px; */
     }
+
+    .accordion .slide div.action {
+        display: none;
+    }
+
     .slide-content {
         width: 100% !important;
         padding: 25px;
         font-size: 95%;
+    }
+}
+
+@media only screen and (max-width: 430px) {
+    .accordion .slide {
+        height: 550px;
     }
 }
 /* End Our Services Section */
@@ -653,9 +673,33 @@ nav .burger-menu.open .close {
 }
 
 @media only screen and (max-width: 768px) {
+    .sector .sectors .image::after {
+        width: 10rem;
+        height: 10rem;
+    }
+
+    .sector .sectors .image .desc {
+        width: 100%;
+        bottom: 0;
+    }
+
+    .sector .sectors .image .desc h3 {
+        font-size: 1.5rem;
+    }
+
+    .sector .sectors .image .desc p {
+        font-size: 0.8rem;
+    }
+
+    .sector .sectors ul li {
+        font-size: 1rem;
+    }
 }
 
 @media only screen and (max-width: 640px) {
+    .sector .container {
+        padding: 3rem 1rem;
+    }
 }
 /* End Our Sector section */
 
