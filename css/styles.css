@@ -74,6 +74,12 @@ ul {
     padding: 0 0.5rem;
 }
 
+@media only screen and (max-width: 1500px) {
+    .container {
+        max-width: 1380px;
+    }
+}
+
 @media only screen and (max-width: 1280px) {
     .container {
         max-width: 1280px;
@@ -743,6 +749,18 @@ nav .burger-menu.open .close {
 .gallery .container:has(.btn) {
     padding-top: 0;
 }
+
+@media only screen and (max-width: 768px) {
+    .gallery .slider {
+        display: flex;
+        flex-wrap: nowrap;
+        overflow-x: auto;
+    }
+
+    .gallery .slide {
+        aspect-ratio: 2/1;
+    }
+}
 /* End Gallery Section */
 
 /* Start Our Vision Section */
@@ -1006,10 +1024,8 @@ nav .burger-menu.open .close {
         padding: 3rem 2rem;
     }
     .who-trust-us .container .clients {
-        flex-direction: column;
-        /* flex-wrap: wrap; */
-        gap: 2rem;
-        justify-content: center;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
     }
     .who-trust-us .container .clients > div:not(:last-child) {
         border: 0.5px solid #e9e9e9;
