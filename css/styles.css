@@ -116,6 +116,8 @@ ul {
 header {
     min-height: 100vh;
     background-image: url('../images/bg-header.png');
+    background-position: center;
+    background-size: cover;
     overflow: hidden;
 }
 
@@ -672,6 +674,7 @@ nav .burger-menu.open .close {
     .sector .sectors {
         display: flex;
         flex-direction: column;
+        gap: 2rem;
     }
 }
 
