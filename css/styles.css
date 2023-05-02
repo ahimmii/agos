@@ -154,6 +154,7 @@ header {
 nav {
     display: flex;
     justify-content: space-between;
+    align-items: center;
     padding-top: 1.3rem;
 }
 
@@ -179,6 +180,8 @@ nav .logo {
 
 nav .burger-menu {
     cursor: pointer;
+    padding: 8px;
+    /* height: fit-content; */
 }
 
 nav .burger-menu .close {
@@ -567,11 +570,12 @@ nav .burger-menu.open .close {
     .slides {
         display: initial;
         flex-direction: column;
+        height: fit-content;
     }
     .slide {
         width: 100% !important;
         margin-bottom: 15px;
-        height: auto;
+        height: fit-content;
         /* border-radius: 10px; */
     }
 
@@ -583,6 +587,10 @@ nav .burger-menu.open .close {
         width: 100% !important;
         padding: 25px;
         font-size: 95%;
+    }
+
+    .slide-content .btn {
+        margin-top: 2px;
     }
 }
 
@@ -1775,7 +1783,7 @@ header.services .hero-services h1 {
 }
 /* End Services Info Section */
 
-/* ------------------------ Services-1 Page ----------------------------- */
+/* ------------------------ Services-4 Page ----------------------------- */
 /* Start Header */
 header.services-1 {
     background: linear-gradient(
@@ -1842,6 +1850,16 @@ header.services-1 .hero-services-1 h1 {
     margin-bottom: 1.5rem;
 }
 
+.services-1-info .container ul {
+    list-style: disc;
+    font-size: 1.1rem;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    margin-left: 30px;
+    margin-bottom: 1.5rem;
+}
+
 @media only screen and (max-width: 1280px) {
     .services-1-info .container {
         padding: 4rem 2rem;
@@ -1849,6 +1867,10 @@ header.services-1 .hero-services-1 h1 {
 
     .services-1-info .container p {
         font-size: 1rem;
+    }
+
+    .services-1-info .container ul {
+        font-size: 0.8rem;
     }
 }
 /* End Services-1 Info Section */
@@ -2481,3 +2503,45 @@ header.blog .hero-blog h1 {
 }
 
 /* End Blog Content Section */
+
+/* ------------------------ Gallery Page ----------------------------- */
+.gallery_page .container {
+    column-count: 4;
+    --webkit-column-count: 4;
+    --moz-column-count: 4;
+    gap: 1rem;
+    padding: 4rem 0;
+}
+
+.image img {
+    height: auto;
+    width: 100%;
+}
+
+/* Responsive-ness for different screen-sizes */
+@media screen and (max-width: 810px) {
+    .gallery_page .container {
+        column-count: 3;
+        --webkit-column-count: 3;
+        --moz-column-count: 3;
+        padding: 4rem 1rem;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    .gallery_page .container {
+        column-count: 2;
+        --webkit-column-count: 2;
+        --moz-column-count: 2;
+        padding: 4rem 1rem;
+    }
+}
+
+@media screen and (max-width: 400px) {
+    .gallery_page .container {
+        column-count: 1;
+        --webkit-column-count: 1;
+        --moz-column-count: 1;
+        padding: 4rem 1rem;
+    }
+}
