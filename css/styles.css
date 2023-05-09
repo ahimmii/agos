@@ -119,22 +119,24 @@ header {
     background-position: center;
     background-size: cover;
     overflow: hidden;
+    position: relative;
 }
 
 .menu {
     height: 0vh;
     background-color: var(--secondary-color);
-    transform: translateY(-5vh);
+    transform: translateY(-10vh);
+    padding: 1.5rem;
     transition: height 0.5s ease-in-out, transform 0.5s ease-in-out;
 }
 
 .menu.open {
-    height: 5vh;
+    height: auto;
     transform: translateY(0);
 }
 
 .menu ul {
-    height: 100%;
+    height: auto;
     display: flex;
     justify-content: center;
     align-items: center;
